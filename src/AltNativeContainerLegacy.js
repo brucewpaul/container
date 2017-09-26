@@ -5,10 +5,11 @@
  * @see AltContainer
  */
 import React from 'react-native'
+import createReactClass from 'create-react-class';
 import mixinContainer from './mixinContainer'
 import assign from 'object.assign'
 
-const AltNativeContainer = React.createClass(assign({
+const AltNativeContainer = createReactClass(assign({
   displayName: 'AltNativeContainer',
 
   render() {

@@ -56,10 +56,11 @@
  * Full docs available at http://goatslacker.github.io/alt/
  */
 import React from 'react'
+import createReactClass from 'create-react-class';
 import mixinContainer from './mixinContainer'
 import assign from 'object.assign'
 
-const AltContainer = React.createClass(assign({
+const AltContainer = createReactClass(assign({
   displayName: 'AltContainer',
 
   render() {
