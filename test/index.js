@@ -137,7 +137,7 @@ export default {
     'children get flux as props with context'() {
       const flux = new Flux()
 
-      const TestComponent = React.createClass({
+      class TestComponent extends React.Component {
         render() {
           return (
             <AltContainer>
@@ -151,7 +151,7 @@ export default {
             </AltContainer>
           )
         }
-      })
+      }
 
       const WrappedComponent = withAltContext(flux)(TestComponent)
 
